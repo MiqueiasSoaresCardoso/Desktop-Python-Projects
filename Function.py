@@ -26,7 +26,7 @@ def calculate_average(qtdsoma = 3):
     else:
         print("Candidato não classificado =(")
 
-'''Nesta função estamos trabalhando com Argumentos e o Return'''
+#Nesta função estamos trabalhando com Argumentos e o Return
 def percentage(numero, porcentagem):
     result = (porcentagem/100 * numero)
     return result
@@ -35,3 +35,15 @@ def percentage(numero, porcentagem):
 e manipular esse dado da forma que desejar, em qualquer lugar, utilizando de acordo
 com a sua regra de negócio'''
 
+#Trabalhando com args
+
+#O Args nos permite inserir uma infinidade de argumentos,sem limite pré-definido
+def soma(*args):
+    #os dados são aramzenados em forma similar a uma lista,e podem ser de varios tipos
+    soma = 0
+    #para acessar cada um individualmente podemos utilizar uma estrutura de repetição como o for
+    if args != None:
+        for arg in args:
+            soma += arg
+    if soma != None:
+        return soma

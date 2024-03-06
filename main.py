@@ -276,7 +276,7 @@ dicionary = {"Nome": "Miqueias Soares", "Age": 20, "Sex": "Masculino", "Professi
 from Function import *
 
 # from  Function import calculate_average
-calculate_average(6)
+#calculate_average(6)
 # porcentagem = percentage(100,20)
 # print(f"Impostos sobre os produtos {porcentagem} % ")
 #requestdata()
@@ -284,3 +284,6 @@ calculate_average(6)
 # import Drawer
 #
 # Drawer.drawer()
+
+result = soma(10,25,47,89)
+print(result)
