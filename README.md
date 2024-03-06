@@ -1,0 +1,1 @@
+Esta Branch contem todo um passo a passo do meu aprendizado em Python, inclusive com explicações para você iniciante em programação. Então vem comingo e vamos embarcar nessa jornada de multipossibilidades que o Python nos traz
