@@ -1,6 +1,7 @@
 '''
-Com as funções eu separo o meu programa em blocos e reutilizo
-códigos, além de evitar a redundância de script
+Com as funções você organiza o seu programa em blocos ou modulos
+e pode utilizar essas funções onde quiser, sem a repetição de
+códigos, além disso deixa o código mais legivel
 '''
 
 def requestdata():
@@ -47,3 +48,21 @@ def soma(*args):
             soma += arg
     if soma != None:
         return soma
+
+#Temos também o Kargs que atua armazenando os dados como um dicionário
+
+def dataperson(**kwargs):
+    if "action" in kwargs.keys():
+        if kwargs["action"] == "soma":
+            return kwargs["num1"] + kwargs["num2"]
+        elif kwargs["action"] == "subtracao":
+            return kwargs["num1"] - kwargs["num2"]
+        if kwargs["action"] == "divisao":
+            return kwargs["num1"] / kwargs["num2"]
+        elif kwargs["action"] == "multiplicacao":
+            return kwargs["num1"] * kwargs["num2"]
+
+#Teste assim no seu arquivo main.py
+'''result = dataperson(action="soma",num1=12,num2=12)
+print(result)'''
+
