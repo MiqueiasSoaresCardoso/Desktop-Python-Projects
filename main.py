@@ -273,22 +273,29 @@ dicionary = {"Nome": "Miqueias Soares", "Age": 20, "Sex": "Masculino", "Professi
 # for data,data2 in dicionary.items():
 #     print(data,data2)
 #o Import com o * importa tudo
-import sys
-sys.path.append('Function.py')
+# import sys
+# sys.path.append('Function.py')
+#
+#
+# from  Function import *
+#
+# result = dataperson(action="soma",num1=12,num2=12)
+# print(result)
 
+from Calculator import *
 
-from  Function import *
-
-result = dataperson(action="soma",num1=12,num2=12)
-print(result)
+variavel = Calculator(operation="divisao",num1=50,num2=3)
+print(variavel)
 #calculate_average(6)
 # porcentagem = percentage(100,20)
 # print(f"Impostos sobre os produtos {porcentagem} % ")
 #requestdata()
 #
+
+#O gituiirggryugryurgeyrgegryurgegrgyugryurg
 # import Drawer
 #
 # Drawer.drawer()
 
-result = soma(10,25,47,89)
-print(result)
+# result = soma(10,25,47,89)
+# print(result)
