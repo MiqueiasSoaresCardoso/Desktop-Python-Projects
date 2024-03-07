@@ -18,3 +18,6 @@ def Calculator(**kwargs):
             return kwargs["num1"] / kwargs["num2"]
 
 #Exemplo de execução no seu arquivo "main.py"
+
+variavel = Calculator(operation="divisao",num1=50,num2=3)
+print(variavel)
