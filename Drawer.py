@@ -11,19 +11,26 @@ def drawer():
     rand = random.randint(1,1000)
     numero = 0
     contador = 0
+    print("Bem-vindo ao Sorteador! para encerrar a qualquer momento, digite 0")
     user = input("Qual é o seu nome?")
-    dados = open(f"Arquivo{user}.txt", "w")
-    while numero != rand:
-        contador += 1
-        print("Insira o seu palpite abaixo")
-        numero2 = int(input(">>"))
-        if numero2 > rand:
-            print("Você inseriu um numero maior =( tente novamente!")
-        elif numero2 < rand:
-            print("Você inseriu um numero menor =( tente novamente!")
-        else:
-            dados.write(f"USER: {user} -- TENTATIVAS: {contador}")
-            print("Uhuu! Você acertou, o numero era {}".format(rand))
-            dados.close()
-            print("Numero de tentativas:{}".format(contador))
-            continue
+    try:
+        dados = open(f"Arquivo{user}.txt", "a")
+    except:
+        dados = open(f"Arquivo{user}.txt", "w")
+    finally:
+        while numero != rand:
+            contador += 1
+            print("Insira o seu palpite abaixo")
+            numero2 = int(input(">>"))
+            if numero2 == 0:
+                dados.close()
+                break
+            if numero2 > rand:
+                print("Você inseriu um numero maior =( tente novamente!")
+            elif numero2 < rand:
+                print("Você inseriu um numero menor =( tente novamente!")
+            else:
+                dados.write(f"\nUSER: {user} -- TENTATIVAS: {contador}")
+                print("Uhuu! Você acertou, o numero era {}".format(rand))
+                print("Numero de tentativas:{}".format(contador))
+                continue
