@@ -2,8 +2,9 @@
 O programa irá sortear um numero entre 1 e 1000, você como
 usuário deve tentar advinhar qual é esse numero com base nas
 orientações sobre o numero inserido, se ele é maior ou menor do que
-o numero sorteado, use este joguinho para treinar o seu pensamento estratégico
-tente acertar com a menor quantidade de tentativas possivel
+o numero sorteado. Ao executar em seu computador, ele gerara arquivos
+txt com os dados dos jogadores,use este joguinho para treinar o seu pensamento estratégico e
+tentar acertar com a menor quantidade de tentativas possivel
 '''
 
 def drawer():
